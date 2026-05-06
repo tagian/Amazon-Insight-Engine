@@ -61,5 +61,60 @@ The project creates a custom sentiment score by combining:
 
 The final sentiment score is calculated as a weighted combination:
 
-```python
 final_score = 0.6 * vader_score + 0.4 * normalized_rating
+This produces a combined sentiment feature that reflects both written review sentiment and star rating.
+
+6. Product Clustering
+
+The notebook groups similar products within each category using:
+
+Product price
+Average rating
+Product description text
+
+Text descriptions are preprocessed using:
+
+Lowercasing
+Punctuation removal
+Stopword removal
+Porter stemming
+
+The clustering pipeline uses:
+
+TF-IDF vectorization for text features
+StandardScaler for numerical features
+K-Means clustering
+Elbow method with KneeLocator to choose the best number of clusters
+PCA visualization for 2D cluster plots
+Silhouette score for cluster quality evaluation
+
+Some categories may be skipped during clustering if they do not contain enough valid price, rating, or description data.
+
+7. Sentiment Classification
+
+The notebook builds classification models to predict sentiment labels based on review text.
+
+The workflow includes:
+
+Cleaning review text
+Tokenization
+Stopword removal
+Creating discrete sentiment labels from final sentiment scores
+Splitting data into train and test sets
+Comparing TF-IDF and FastText embeddings
+Training and evaluating multiple classifiers
+
+Models used:
+
+Gaussian Naive Bayes
+K-Nearest Neighbors
+Random Forest
+
+Evaluation metrics:
+
+Precision
+Recall
+F1-score
+Accuracy
+
+The notebook uses 10-fold cross-validation on the training set, then evaluates the best feature representation for each model on the test set.
