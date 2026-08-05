@@ -1,7 +1,9 @@
-# AmazonInsight
+# Amazon-Insight-Engine
 
-## This is a project from '24. If you are not familiar Jupyter notebooks, it's just code and output. So by previewing the file using the browser, you also see results of the work.
-## The following description is LLM-Generated.
+## This is a project from '24. If you are not familiar Jupyter notebooks, it's just code and output.  
+So by previewing the file using the browser, you also see results of the work.  
+
+## The following description is LLM-Generated.  
 
 AmazonInsight is a Python/Google Colab notebook project for analyzing Amazon product reviews from the **McAuley-Lab Amazon Reviews 2023** dataset. The project explores ratings, review text, product metadata, clustering, sentiment scoring, and classification models across five Amazon product categories.
 
