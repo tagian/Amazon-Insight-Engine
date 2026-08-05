@@ -1,7 +1,7 @@
 # Amazon-Insight-Engine
 
-## This is a project from '24. If you are not familiar Jupyter notebooks, it's just code and output.  
-So by previewing the file using the browser, you also see results of the work.  
+This is a project from '24. If you are not familiar Jupyter notebooks, it's just code and output.  
+By previewing the file using the browser, you also see results of the work.  
 
 ## The following description is LLM-Generated.  
 
